@@ -45,7 +45,7 @@ class BotConfig:
     llm_connect_timeout: int = field(default_factory=lambda: int(os.getenv("LLM_CONNECT_TIMEOUT", "15"))) # Увеличено
     llm_max_output_tokens: int = field(default_factory=lambda: int(os.getenv("LLM_MAX_OUTPUT_TOKENS", "2000"))) # Увеличено
     llm_temperature: float = field(default_factory=lambda: float(os.getenv("LLM_TEMPERATURE", "0.7")))
-    gemini_model_name: str = field(default_factory=lambda: os.getenv("GEMINI_MODEL_NAME", "gemini-1.5-flash-latest")) # Добавлено
+    gemini_model_name: str = field(default_factory=lambda: os.getenv("GEMINI_MODEL_NAME", "gemini-2.0-flash")) # Добавлено
 
     tts_request_timeout: int = field(default_factory=lambda: int(os.getenv("TTS_REQUEST_TIMEOUT", "120")))
     tts_connect_timeout: int = field(default_factory=lambda: int(os.getenv("TTS_CONNECT_TIMEOUT", "10")))
