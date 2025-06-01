@@ -1,0 +1,32 @@
+# Testing
+pytest>=7.4.0,<8.0.0
+pytest-asyncio>=0.21.0,<0.24.0
+pytest-mock>=3.11.0,<3.13.0
+pytest-cov>=4.1.0,<5.0.0 # For coverage reports
+
+# Linters and Formatters
+black>=23.0.0,<25.0.0
+isort>=5.12.0,<6.0.0
+flake8>=6.0.0,<8.0.0
+mypy>=1.5.0,<1.10.0
+
+# Debugging
+# ipython # Optional, for interactive debugging
+# ipdb    # Optional, for interactive debugging with pdb
+
+# Documentation (if using Sphinx or similar)
+# sphinx>=7.0.0,<8.0.0
+# sphinx-rtd-theme>=1.3.0,<2.0.0
+
+# Pre-commit hooks (optional)
+# pre-commit>=3.3.0,<4.0.0
+
+# For checking outdated packages
+# pip-tools
+# pipdeptree
+
+# For security vulnerability scanning (optional)
+# bandit
+
+# Other development utilities
+# tox # For running tests in different environments

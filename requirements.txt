@@ -1,0 +1,77 @@
+# Telegram Bot Framework
+aiogram==3.13.1
+aiohttp>=3.9.0,<4.0.0
+aiofiles>=23.0.0,<24.0.0
+
+# Database
+SQLAlchemy==2.0.36
+aiosqlite==0.20.0
+alembic==1.14.0
+greenlet>=1.1.0 # Required for some SQLAlchemy async operations
+
+# Environment and Configuration
+python-dotenv==1.0.1
+
+# Text Processing and NLP
+python-docx>=1.1.0,<1.2.0
+python-multipart>=0.0.6,<0.0.8 # Для обработки multipart/form-data, если нужно
+
+# Audio Processing
+pydub>=0.25.0,<0.26.0
+SpeechRecognition>=3.10.0,<3.11.0
+# librosa # Закомментировано, если не используется напрямую
+# soundfile
+# vosk
+
+# HTTP клиенты и утилиты
+httpx>=0.26.0,<0.28.0
+ujson>=5.7.0,<5.10.0    # Для быстрой работы с JSON
+requests>=2.31.0,<2.33.0 # Синхронный HTTP клиент, если где-то нужен
+
+# Логирование и мониторинг
+structlog>=23.0.0,<24.0.0
+
+# Типизация
+typing-extensions>=4.10.0 # Может требоваться для SQLAlchemy или Pydantic
+
+# Утилиты для работы с датами
+python-dateutil>=2.8.0,<2.10.0
+
+# Криптография (для безопасности, может быть зависимостью других пакетов)
+# cryptography>=41.0.0,<43.0.0 # Если нужна явно
+
+# Валидация данных
+pydantic>=2.9.0,<2.10.0
+asyncpg==0.30.0
+
+# AI & ML
+openai==1.57.0
+google-generativeai==0.8.3
+# numpy
+# scipy
+# pillow
+# pytesseract
+# deepgram-sdk
+
+# Websockets
+# websockets # Закомментировано, если не используется напрямую
+
+# FSM Storage (для PostgreSQL через SQLAlchemy)
+aiogram-sqlalchemy-storage
+
+# Caching
+cachetools>=5.0.0,<6.0.0
+
+# Тестирование (если вы их используете локально)
+pytest>=7.4.0,<8.0.0
+pytest-asyncio>=0.21.0,<0.24.0
+pytest-mock>=3.11.0,<3.13.0
+
+# Производительность (uvloop опционально, не для Windows)
+# uvloop>=0.17.0,<0.20.0; sys_platform != "win32"
+
+# Инструменты разработки (для локального окружения)
+# black
+# isort
+# flake8
+# mypy
